@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="title">Generate a <span>random password</span></h1>
+            <p id="paragraph">Never use an insecure password again</p>
+            <div id="pwd-wrapper">
+                <button id="create-passwords-btn" onclick="getPasswords();">Generate passwords</button>
+                <input type="number" name="pwd-length" id="pwd-length" min="15" autocomplete="off" placeholder="Choose password length">
+            </div>
+
+            <hr>
+            <div id="password-containers">
+                <div class="password" onclick="copyPassword('password1');" onmouseover="showTooltip('tooltip');" 
+                onmouseout="hideTooltip('tooltip');"><div id="password1"></div></div>
+                <div class="password" onclick="copyPassword('password2');" onmouseover="showTooltip('tooltip');" 
+                onmouseout="hideTooltip('tooltip');"><div id="password2"></div></div>
+            </div>
+            <!-- Replace this with a proper tooltip: -->
+            <div id="tooltip">Click to copy to clipboard</div>
+        </div>
+    <script src="index.js"></script>
+    </body>
+</html>
+
