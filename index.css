@@ -122,3 +122,11 @@ hr{
     visibility: hidden;
 }
 
+@media only screen and (max-width: 720px) {
+  body {
+    margin: 0;
+  }
+  #container {
+    padding-top: 52px;
+  }
+}
