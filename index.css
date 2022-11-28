@@ -4,10 +4,10 @@ body, html{
 }
 body {
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: #1C1C1C;
     color: #FFFFFF;
+    margin: 1.875rem 0 0 0;
 }
 
 #container{
