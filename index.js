@@ -41,7 +41,8 @@ function createPassword(){
     let char = 0;
     while(charCheck.includes(false)){
         /*
-        Clears out the password and charCheck variables if the password does not contain at least one uppercase letter, one lowercase letter, one number, and one symbol
+        Clears out the password and charCheck variables if the password does not contain at least one uppercase letter, one lowercase 
+        letter, one number, and one symbol.
         */
         password = "";
         charCheck = [false, false, false, false];
